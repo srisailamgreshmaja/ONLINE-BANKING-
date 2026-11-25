@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --blue: #2456a6;
+  --dark: #10264d;
+  --light: #f3f7fd;
+  --text: #1c2c45;
+}
+
+.site-shell {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 18px;
+  background: var(--blue);
+  color: white;
+  font-weight: 600;
+}
+
+button:hover {
+  opacity: .85;
+}

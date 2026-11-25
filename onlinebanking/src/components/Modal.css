@@ -1,0 +1,63 @@
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: #07162dcc;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  z-index: 50;
+}
+
+.modal-card {
+  position: relative;
+  background: white;
+  padding: 35px;
+  width: min(100%, 420px);
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 18px;
+}
+
+.modal-card h2 {
+  text-align: center;
+}
+
+.modal-card form button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.modal-card form p {
+  text-align: center;
+  font-size: 12px;
+}
+
+.modal-card form p button {
+  width: auto;
+  padding: 5px;
+}
+
+.close {
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  background: transparent;
+  color: #333;
+  font-size: 25px;
+}
+
+.demo-hint {
+  background: var(--light);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.modal-card input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #d9e1ec;
+  border-radius: 8px;
+  box-sizing: border-box;
+}

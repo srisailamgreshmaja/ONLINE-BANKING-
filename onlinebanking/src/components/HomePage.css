@@ -1,0 +1,155 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+  align-items: center;
+  padding: 75px 8%;
+  background: var(--light);
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: var(--dark);
+}
+
+.hero h1 span {
+  color: var(--blue);
+}
+
+.hero p {
+  color: #65758b;
+  line-height: 1.8;
+}
+
+.hero-visual {
+  position: relative;
+}
+
+.hero-visual img {
+  width: 100%;
+  height: 370px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.floating-card {
+  position: absolute;
+  bottom: -25px;
+  left: -25px;
+  background: linear-gradient(120deg, #18376b, #4779c6);
+  color: white;
+  padding: 22px;
+  width: 220px;
+  border-radius: 15px;
+}
+
+.floating-card p {
+  color: white;
+  letter-spacing: 2px;
+}
+
+.trust-items {
+  display: flex;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.stats-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  padding: 35px 6%;
+  background: white;
+}
+
+.stats-section h2 {
+  color: var(--blue);
+}
+
+.services-section {
+  padding: 75px 7%;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.section-heading span {
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.service-card {
+  padding: 30px 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px #0001;
+  border: 1px solid #e5eaf1;
+}
+
+.service-card i {
+  font-size: 30px;
+  color: var(--blue);
+}
+
+.service-card p {
+  color: #68778d;
+  font-size: 14px;
+}
+
+.security-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  padding: 70px 8%;
+  background: var(--light);
+}
+
+.security-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.about-section {
+  text-align: center;
+  padding: 65px 20px;
+}
+
+@media(max-width: 900px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 650px) {
+  .hero,
+  .security-section {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .stats-section {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .floating-card {
+    left: 10px;
+  }
+}
